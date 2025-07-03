@@ -21,7 +21,8 @@ const TabNav: React.FC<TabNavProps> = ({ tabs, selectedTab, onTabSelect }) => {
             fontWeight: selectedTab === tab ? 'bold' : 'normal',
             cursor: 'pointer',
             outline: 'none',
-            fontSize: 16
+            fontSize: 16,
+            color: '#222',
           }}
         >
           {tab}

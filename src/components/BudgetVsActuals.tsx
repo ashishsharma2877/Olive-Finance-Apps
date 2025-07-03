@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import type { FilterConfig, FilterOption } from './common/FilterBar';
+import type { FilterConfig } from './common/FilterBar';
 import FilterBar from './common/FilterBar';
 import SummaryCard from './common/SummaryCard';
 import ChartWrapper from './common/ChartWrapper';
@@ -102,25 +102,25 @@ const BudgetVsActuals: React.FC = () => {
       </Typography>
       {/* Filters and summary cards in a single row */}
       <Grid container spacing={2} alignItems="center" mb={2}>
-        <Grid item xs={12} md={4} lg={5}>
+        <Grid xs={12} md={4}>
           <FilterBar filters={filters} />
         </Grid>
-        {summaryCards.map((card, idx) => (
-          <Grid item xs={12} sm={4} md={2} lg={2} key={card.title}>
+        {summaryCards.map((card) => (
+          <Grid xs={12} sm={4} md={2} key={card.title}>
             <SummaryCard {...card} />
           </Grid>
         ))}
       </Grid>
       {/* Two-column layout for Key Insights and Chart, responsive */}
       <Grid container spacing={2} mb={3} alignItems="stretch">
-        <Grid item xs={12} md={4}>
+        <Grid xs={12} md={4}>
           <Box height="100%" display="flex" flexDirection="column">
             <Typography variant="h6" mb={1}>Key Insights</Typography>
             <KeyInsights insights={insights} />
           </Box>
         </Grid>
-        <Grid item xs={12} md={8}>
-          <Box height="100%" minHeight={420} minWidth={{ xs: '100%', md: 500, lg: 700 }}>
+        <Grid xs={12} md={8}>
+          <Box height="100%" minHeight={420}>
             <ChartWrapper type="bar" data={chartData} options={{ maintainAspectRatio: false, aspectRatio: 2.5, layout: { padding: 24 } }} />
           </Box>
         </Grid>
