@@ -1,0 +1,142 @@
+{
+    "filters": {
+      "games": ["All", "FIFA Mobile", "Madden", "Apex Legends Mobile"],
+      "platforms": ["All", "iOS", "Android"],
+      "countries": ["All", "US", "IN", "UK"],
+      "timePeriods": ["All", "This Week", "Last Week"]
+    },
+    "summary": {
+      "dau": 48200,
+      "avgSessionLength": "12.5 min",
+      "rageQuits": 3250
+    },
+    "chartData": [
+        { "date": "2025-07-14", "game": "FIFA Mobile", "platform": "iOS", "country": "US", "timePeriod": "This Week", "dau": 15000, "adViews": 12000, "xp": 200000, "rageQuits": 300, "crash": 40, "afk": 200, "natural": 10000 },
+        { "date": "2025-07-14", "game": "Madden", "platform": "Android", "country": "IN", "timePeriod": "This Week", "dau": 13000, "adViews": 10000, "xp": 180000, "rageQuits": 250, "crash": 30, "afk": 150, "natural": 9000 },
+        { "date": "2025-07-14", "game": "Apex Legends Mobile", "platform": "iOS", "country": "UK", "timePeriod": "This Week", "dau": 14000, "adViews": 11000, "xp": 190000, "rageQuits": 270, "crash": 35, "afk": 180, "natural": 9500 },
+        { "date": "2025-07-15", "game": "FIFA Mobile", "platform": "Android", "country": "US", "timePeriod": "This Week", "dau": 16000, "adViews": 12500, "xp": 210000, "rageQuits": 320, "crash": 42, "afk": 220, "natural": 10200 },
+        { "date": "2025-07-15", "game": "Madden", "platform": "iOS", "country": "IN", "timePeriod": "This Week", "dau": 13500, "adViews": 9500, "xp": 185000, "rageQuits": 260, "crash": 28, "afk": 160, "natural": 9100 },
+        { "date": "2025-07-15", "game": "Apex Legends Mobile", "platform": "Android", "country": "UK", "timePeriod": "This Week", "dau": 14500, "adViews": 10800, "xp": 195000, "rageQuits": 280, "crash": 38, "afk": 190, "natural": 9700 },
+        { "date": "2025-07-16", "game": "FIFA Mobile", "platform": "iOS", "country": "US", "timePeriod": "This Week", "dau": 15500, "adViews": 12200, "xp": 205000, "rageQuits": 310, "crash": 39, "afk": 210, "natural": 10100 },
+        { "date": "2025-07-16", "game": "Madden", "platform": "Android", "country": "IN", "timePeriod": "This Week", "dau": 13200, "adViews": 9700, "xp": 182000, "rageQuits": 255, "crash": 33, "afk": 155, "natural": 9050 },
+        { "date": "2025-07-16", "game": "Apex Legends Mobile", "platform": "iOS", "country": "UK", "timePeriod": "This Week", "dau": 14200, "adViews": 11200, "xp": 192000, "rageQuits": 275, "crash": 37, "afk": 185, "natural": 9600 },
+        { "date": "2025-07-16", "game": "FIFA Mobile", "platform": "Android", "country": "IN", "timePeriod": "This Week", "dau": 15800, "adViews": 11800, "xp": 208000, "rageQuits": 315, "crash": 41, "afk": 215, "natural": 10300 },
+        { "date": "2025-07-16", "game": "Madden", "platform": "iOS", "country": "UK", "timePeriod": "This Week", "dau": 13800, "adViews": 10200, "xp": 187000, "rageQuits": 265, "crash": 36, "afk": 170, "natural": 9200 },
+        { "date": "2025-07-16", "game": "Apex Legends Mobile", "platform": "Android", "country": "US", "timePeriod": "This Week", "dau": 15000, "adViews": 11500, "xp": 198000, "rageQuits": 290, "crash": 40, "afk": 200, "natural": 9800 },
+        { "date": "2025-07-16", "game": "FIFA Mobile", "platform": "iOS", "country": "UK", "timePeriod": "This Week", "dau": 15300, "adViews": 11900, "xp": 203000, "rageQuits": 305, "crash": 38, "afk": 205, "natural": 10050 },
+        { "date": "2025-07-16", "game": "Madden", "platform": "Android", "country": "US", "timePeriod": "This Week", "dau": 13400, "adViews": 9800, "xp": 183000, "rageQuits": 258, "crash": 31, "afk": 158, "natural": 9080 },
+        { "date": "2025-07-16", "game": "Apex Legends Mobile", "platform": "iOS", "country": "IN", "timePeriod": "This Week", "dau": 14100, "adViews": 11000, "xp": 191000, "rageQuits": 273, "crash": 34, "afk": 183, "natural": 9580 }
+      ],
+    "tableColumns": [
+      { "field": "sessionId", "headerName": "Session ID" },
+      { "field": "playerId", "headerName": "Player ID" },
+      { "field": "game", "headerName": "Game" },
+      { "field": "platform", "headerName": "Platform" },
+      { "field": "country", "headerName": "Country" },
+      { "field": "sessionLength", "headerName": "Length" },
+      { "field": "xp", "headerName": "XP" },
+      { "field": "adViews", "headerName": "Ad Views" },
+      { "field": "levelsPlayed", "headerName": "Levels" },
+      { "field": "exitReason", "headerName": "Exit" },
+      { "field": "revenueUsd", "headerName": "Spend (USD)" }
+    ],
+    "insights": [
+      { "type": "warning", "message": "Rage quits spiked 22% compared to yesterday." },
+      { "type": "success", "message": "DAU has grown 5% week-over-week." },
+      { "type": "info", "message": "Session length holding steady across iOS and Android." },
+      { "type": "error", "message": "Crash-related exits doubled on July 14." }
+    ],
+    "tableData": [
+      {
+        "sessionId": "S001", "playerId": "P1001", "game": "FIFA Mobile", "platform": "iOS", "country": "US", "sessionLength": "10m", "xp": 1200, "adViews": 3, "levelsPlayed": 2, "exitReason": "natural", "revenueUsd": 1.99
+      },
+      {
+        "sessionId": "S002", "playerId": "P1002", "game": "Madden", "platform": "Android", "country": "IN", "sessionLength": "8m", "xp": 960, "adViews": 2, "levelsPlayed": 3, "exitReason": "afk", "revenueUsd": 0.00
+      },
+      {
+        "sessionId": "S003", "playerId": "P1003", "game": "Apex Legends Mobile", "platform": "iOS", "country": "UK", "sessionLength": "14m", "xp": 1400, "adViews": 4, "levelsPlayed": 1, "exitReason": "rage-quit", "revenueUsd": 3.49
+      },
+      {
+        "sessionId": "S004", "playerId": "P1004", "game": "FIFA Mobile", "platform": "Android", "country": "US", "sessionLength": "12m", "xp": 1280, "adViews": 3, "levelsPlayed": 4, "exitReason": "crash", "revenueUsd": 0.00
+      },
+      {
+        "sessionId": "S005", "playerId": "P1005", "game": "Madden", "platform": "iOS", "country": "IN", "sessionLength": "9m", "xp": 1000, "adViews": 1, "levelsPlayed": 2, "exitReason": "natural", "revenueUsd": 2.99
+      },
+      {
+        "sessionId": "S006", "playerId": "P1006", "game": "Apex Legends Mobile", "platform": "Android", "country": "UK", "sessionLength": "11m", "xp": 1360, "adViews": 2, "levelsPlayed": 3, "exitReason": "afk", "revenueUsd": 0.00
+      },
+      {
+        "sessionId": "S007", "playerId": "P1007", "game": "FIFA Mobile", "platform": "iOS", "country": "US", "sessionLength": "7m", "xp": 880, "adViews": 0, "levelsPlayed": 2, "exitReason": "crash", "revenueUsd": 0.00
+      },
+      {
+        "sessionId": "S008", "playerId": "P1008", "game": "Madden", "platform": "Android", "country": "IN", "sessionLength": "13m", "xp": 1440, "adViews": 5, "levelsPlayed": 5, "exitReason": "natural", "revenueUsd": 4.99
+      },
+      {
+        "sessionId": "S009", "playerId": "P1009", "game": "Apex Legends Mobile", "platform": "iOS", "country": "UK", "sessionLength": "10m", "xp": 1200, "adViews": 3, "levelsPlayed": 3, "exitReason": "rage-quit", "revenueUsd": 0.00
+      },
+      {
+        "sessionId": "S010", "playerId": "P1010", "game": "FIFA Mobile", "platform": "Android", "country": "US", "sessionLength": "15m", "xp": 1520, "adViews": 4, "levelsPlayed": 4, "exitReason": "afk", "revenueUsd": 0.00
+      },
+      {
+        "sessionId": "S011", "playerId": "P1011", "game": "Madden", "platform": "iOS", "country": "IN", "sessionLength": "8m", "xp": 960, "adViews": 2, "levelsPlayed": 2, "exitReason": "crash", "revenueUsd": 0.00
+      },
+      {
+        "sessionId": "S012", "playerId": "P1012", "game": "Apex Legends Mobile", "platform": "Android", "country": "UK", "sessionLength": "12m", "xp": 1280, "adViews": 3, "levelsPlayed": 2, "exitReason": "natural", "revenueUsd": 1.99
+      },
+      {
+        "sessionId": "S013", "playerId": "P1013", "game": "FIFA Mobile", "platform": "iOS", "country": "US", "sessionLength": "9m", "xp": 1000, "adViews": 1, "levelsPlayed": 1, "exitReason": "afk", "revenueUsd": 0.00
+      },
+      {
+        "sessionId": "S014", "playerId": "P1014", "game": "Madden", "platform": "Android", "country": "IN", "sessionLength": "11m", "xp": 1320, "adViews": 3, "levelsPlayed": 4, "exitReason": "rage-quit", "revenueUsd": 2.49
+      },
+      {
+        "sessionId": "S015", "playerId": "P1015", "game": "Apex Legends Mobile", "platform": "iOS", "country": "UK", "sessionLength": "10m", "xp": 1200, "adViews": 2, "levelsPlayed": 2, "exitReason": "crash", "revenueUsd": 0.00
+      },
+      {
+        "sessionId": "S016", "playerId": "P1016", "game": "FIFA Mobile", "platform": "Android", "country": "US", "sessionLength": "14m", "xp": 1480, "adViews": 4, "levelsPlayed": 5, "exitReason": "natural", "revenueUsd": 3.49
+      },
+      {
+        "sessionId": "S017", "playerId": "P1017", "game": "Madden", "platform": "iOS", "country": "IN", "sessionLength": "7m", "xp": 880, "adViews": 1, "levelsPlayed": 3, "exitReason": "afk", "revenueUsd": 0.00
+      },
+      {
+        "sessionId": "S018", "playerId": "P1018", "game": "Apex Legends Mobile", "platform": "Android", "country": "UK", "sessionLength": "13m", "xp": 1400, "adViews": 3, "levelsPlayed": 1, "exitReason": "crash", "revenueUsd": 0.00
+      },
+      {
+        "sessionId": "S019", "playerId": "P1019", "game": "FIFA Mobile", "platform": "iOS", "country": "US", "sessionLength": "10m", "xp": 1200, "adViews": 3, "levelsPlayed": 3, "exitReason": "natural", "revenueUsd": 1.99
+      },
+      {
+        "sessionId": "S020", "playerId": "P1020", "game": "Madden", "platform": "Android", "country": "IN", "sessionLength": "8m", "xp": 960, "adViews": 2, "levelsPlayed": 3, "exitReason": "afk", "revenueUsd": 0.00
+      },
+      {
+        "sessionId": "S021", "playerId": "P1021", "game": "Apex Legends Mobile", "platform": "iOS", "country": "UK", "sessionLength": "14m", "xp": 1400, "adViews": 4, "levelsPlayed": 1, "exitReason": "rage-quit", "revenueUsd": 3.49
+      },
+      {
+        "sessionId": "S022", "playerId": "P1022", "game": "FIFA Mobile", "platform": "Android", "country": "US", "sessionLength": "12m", "xp": 1280, "adViews": 3, "levelsPlayed": 4, "exitReason": "crash", "revenueUsd": 0.00
+      },
+      {
+        "sessionId": "S023", "playerId": "P1023", "game": "Madden", "platform": "iOS", "country": "IN", "sessionLength": "9m", "xp": 1000, "adViews": 1, "levelsPlayed": 2, "exitReason": "natural", "revenueUsd": 2.99
+      },
+      {
+        "sessionId": "S024", "playerId": "P1024", "game": "Apex Legends Mobile", "platform": "Android", "country": "UK", "sessionLength": "11m", "xp": 1360, "adViews": 2, "levelsPlayed": 3, "exitReason": "afk", "revenueUsd": 0.00
+      },
+      {
+        "sessionId": "S025", "playerId": "P1025", "game": "FIFA Mobile", "platform": "iOS", "country": "US", "sessionLength": "7m", "xp": 880, "adViews": 0, "levelsPlayed": 2, "exitReason": "crash", "revenueUsd": 0.00
+      },
+      {
+        "sessionId": "S026", "playerId": "P1026", "game": "Madden", "platform": "Android", "country": "IN", "sessionLength": "13m", "xp": 1440, "adViews": 5, "levelsPlayed": 5, "exitReason": "natural", "revenueUsd": 4.99
+      },
+      {
+        "sessionId": "S027", "playerId": "P1027", "game": "Apex Legends Mobile", "platform": "iOS", "country": "UK", "sessionLength": "10m", "xp": 1200, "adViews": 3, "levelsPlayed": 3, "exitReason": "rage-quit", "revenueUsd": 0.00
+      },
+      {
+        "sessionId": "S028", "playerId": "P1028", "game": "FIFA Mobile", "platform": "Android", "country": "US", "sessionLength": "15m", "xp": 1520, "adViews": 4, "levelsPlayed": 4, "exitReason": "afk", "revenueUsd": 0.00
+      },
+      {
+        "sessionId": "S029", "playerId": "P1029", "game": "Madden", "platform": "iOS", "country": "IN", "sessionLength": "8m", "xp": 960, "adViews": 2, "levelsPlayed": 2, "exitReason": "crash", "revenueUsd": 0.00
+      },
+      {
+        "sessionId": "S030", "playerId": "P1030", "game": "Apex Legends Mobile", "platform": "Android", "country": "UK", "sessionLength": "12m", "xp": 1280, "adViews": 3, "levelsPlayed": 2, "exitReason": "natural", "revenueUsd": 1.99
+      }
+    ]
+  }
+  

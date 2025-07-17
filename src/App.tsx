@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import TabNav from './components/TabNav'
+import PlayerEngagement from './components/PlayerEngagement'
 import BudgetVsActuals from './components/BudgetVsActuals'
 import TopVarianceDrivers from './components/TopVarianceDrivers'
 import ForecastAccuracy from './components/ForecastAccuracy'
@@ -7,6 +8,7 @@ import ScenarioPlanning from './components/ScenarioPlanning'
 import './App.css'
 
 const TABS = [
+  'Player Engagement',
   'Budget vs Actuals',
   'Top Variance Drivers',
   'Forecast Accuracy',
@@ -18,6 +20,9 @@ function App() {
 
   let TabContent = null
   switch (selectedTab) {
+    case 'Player Engagement':
+      TabContent = <PlayerEngagement />
+      break
     case 'Budget vs Actuals':
       TabContent = <BudgetVsActuals />
       break
