@@ -1,0 +1,72 @@
+{
+    "filters": {
+      "games": ["All", "FIFA Mobile", "Madden", "Apex Legends Mobile"],
+      "platforms": ["All", "iOS", "Android"],
+      "countries": ["All", "US", "IN", "UK"],
+      "timePeriods": ["All", "This Week", "Last Week"]
+    },
+    "summary": {
+      "totalRevenueUsd": 18492.37,
+      "avgRevenuePerUser": 3.15,
+      "topItem": "Pro Skin Pack",
+      "conversionRate": "4.2%"
+    },
+    "chartData": [
+      { "date": "2025-07-14", "game": "FIFA Mobile", "platform": "iOS", "country": "US", "timePeriod": "This Week", "revenueUsd": 4500, "purchases": 180 },
+      { "date": "2025-07-14", "game": "Madden", "platform": "Android", "country": "IN", "timePeriod": "This Week", "revenueUsd": 3200, "purchases": 160 },
+      { "date": "2025-07-14", "game": "Apex Legends Mobile", "platform": "iOS", "country": "UK", "timePeriod": "This Week", "revenueUsd": 2700, "purchases": 130 },
+      { "date": "2025-07-15", "game": "FIFA Mobile", "platform": "Android", "country": "US", "timePeriod": "This Week", "revenueUsd": 4800, "purchases": 200 },
+      { "date": "2025-07-15", "game": "Madden", "platform": "iOS", "country": "IN", "timePeriod": "This Week", "revenueUsd": 3200, "purchases": 150 },
+      { "date": "2025-07-15", "game": "Apex Legends Mobile", "platform": "Android", "country": "UK", "timePeriod": "This Week", "revenueUsd": 2592.37, "purchases": 120 }
+    ],
+    "tableColumns": [
+      { "field": "purchaseId", "headerName": "Purchase ID" },
+      { "field": "playerId", "headerName": "Player ID" },
+      { "field": "game", "headerName": "Game" },
+      { "field": "platform", "headerName": "Platform" },
+      { "field": "country", "headerName": "Country" },
+      { "field": "itemName", "headerName": "Item" },
+      { "field": "itemType", "headerName": "Type" },
+      { "field": "economy", "headerName": "Economy" },
+      { "field": "priceUsd", "headerName": "Price (USD)" },
+      { "field": "paymentMethod", "headerName": "Payment" }
+    ],
+    "tableData": [
+      { "purchaseId": "TX001", "playerId": "P2001", "game": "FIFA Mobile", "platform": "iOS", "country": "US", "itemName": "Pro Skin Pack", "itemType": "COSMETIC", "economy": "Premium", "priceUsd": 4.99, "paymentMethod": "Apple Pay" },
+      { "purchaseId": "TX002", "playerId": "P2002", "game": "Madden", "platform": "Android", "country": "IN", "itemName": "Season Pass", "itemType": "FULL_GAME", "economy": "Hard", "priceUsd": 9.99, "paymentMethod": "Google Pay" },
+      { "purchaseId": "TX003", "playerId": "P2003", "game": "Apex Legends Mobile", "platform": "iOS", "country": "UK", "itemName": "Currency Bundle", "itemType": "DLC", "economy": "Soft", "priceUsd": 2.99, "paymentMethod": "Credit Card" },
+      { "purchaseId": "TX004", "playerId": "P2004", "game": "FIFA Mobile", "platform": "Android", "country": "US", "itemName": "Golden Pass", "itemType": "FULL_GAME", "economy": "Premium", "priceUsd": 14.99, "paymentMethod": "Google Pay" },
+      { "purchaseId": "TX005", "playerId": "P2005", "game": "Madden", "platform": "iOS", "country": "IN", "itemName": "Rare Emote Set", "itemType": "COSMETIC", "economy": "Hard", "priceUsd": 3.99, "paymentMethod": "Apple Pay" },
+      { "purchaseId": "TX006", "playerId": "P2006", "game": "FIFA Mobile", "platform": "iOS", "country": "UK", "itemName": "XP Boost", "itemType": "DLC", "economy": "Soft", "priceUsd": 1.99, "paymentMethod": "Apple Pay" },
+      { "purchaseId": "TX007", "playerId": "P2007", "game": "Madden", "platform": "Android", "country": "US", "itemName": "All-Star Jersey", "itemType": "COSMETIC", "economy": "Premium", "priceUsd": 5.99, "paymentMethod": "Google Pay" },
+      { "purchaseId": "TX008", "playerId": "P2008", "game": "Apex Legends Mobile", "platform": "iOS", "country": "IN", "itemName": "Legend Pack", "itemType": "FULL_GAME", "economy": "Hard", "priceUsd": 10.99, "paymentMethod": "Credit Card" },
+      { "purchaseId": "TX009", "playerId": "P2009", "game": "FIFA Mobile", "platform": "Android", "country": "UK", "itemName": "Gold Coin Bundle", "itemType": "DLC", "economy": "Soft", "priceUsd": 3.49, "paymentMethod": "Google Pay" },
+      { "purchaseId": "TX010", "playerId": "P2010", "game": "Madden", "platform": "iOS", "country": "US", "itemName": "Player Card Booster", "itemType": "DLC", "economy": "Hard", "priceUsd": 4.49, "paymentMethod": "Apple Pay" },
+      { "purchaseId": "TX011", "playerId": "P2011", "game": "Apex Legends Mobile", "platform": "Android", "country": "IN", "itemName": "Elite Loadout", "itemType": "COSMETIC", "economy": "Premium", "priceUsd": 6.99, "paymentMethod": "Credit Card" },
+      { "purchaseId": "TX012", "playerId": "P2012", "game": "FIFA Mobile", "platform": "iOS", "country": "UK", "itemName": "Double XP Weekend", "itemType": "DLC", "economy": "Soft", "priceUsd": 2.49, "paymentMethod": "Apple Pay" },
+      { "purchaseId": "TX013", "playerId": "P2013", "game": "Madden", "platform": "Android", "country": "US", "itemName": "Season Extension", "itemType": "FULL_GAME", "economy": "Hard", "priceUsd": 11.99, "paymentMethod": "Google Pay" },
+      { "purchaseId": "TX014", "playerId": "P2014", "game": "Apex Legends Mobile", "platform": "iOS", "country": "IN", "itemName": "Battle Banner", "itemType": "COSMETIC", "economy": "Hard", "priceUsd": 3.49, "paymentMethod": "Apple Pay" },
+      { "purchaseId": "TX015", "playerId": "P2015", "game": "FIFA Mobile", "platform": "Android", "country": "UK", "itemName": "Captain’s Pack", "itemType": "FULL_GAME", "economy": "Premium", "priceUsd": 13.99, "paymentMethod": "Google Pay" },
+      { "purchaseId": "TX016", "playerId": "P2016", "game": "Madden", "platform": "iOS", "country": "US", "itemName": "Stadium Pass", "itemType": "DLC", "economy": "Soft", "priceUsd": 2.99, "paymentMethod": "Apple Pay" },
+      { "purchaseId": "TX017", "playerId": "P2017", "game": "Apex Legends Mobile", "platform": "Android", "country": "IN", "itemName": "Midnight Skins", "itemType": "COSMETIC", "economy": "Premium", "priceUsd": 5.49, "paymentMethod": "Google Pay" },
+      { "purchaseId": "TX018", "playerId": "P2018", "game": "FIFA Mobile", "platform": "iOS", "country": "UK", "itemName": "Event Ticket", "itemType": "DLC", "economy": "Soft", "priceUsd": 1.49, "paymentMethod": "Apple Pay" },
+      { "purchaseId": "TX019", "playerId": "P2019", "game": "Madden", "platform": "Android", "country": "US", "itemName": "Emote Collection", "itemType": "COSMETIC", "economy": "Hard", "priceUsd": 3.89, "paymentMethod": "Credit Card" },
+      { "purchaseId": "TX020", "playerId": "P2020", "game": "Apex Legends Mobile", "platform": "iOS", "country": "IN", "itemName": "Gear Bundle", "itemType": "DLC", "economy": "Premium", "priceUsd": 4.75, "paymentMethod": "Apple Pay" },
+      { "purchaseId": "TX021", "playerId": "P2021", "game": "FIFA Mobile", "platform": "Android", "country": "UK", "itemName": "All-Star Kit", "itemType": "COSMETIC", "economy": "Soft", "priceUsd": 2.65, "paymentMethod": "Google Pay" },
+      { "purchaseId": "TX022", "playerId": "P2022", "game": "Madden", "platform": "iOS", "country": "US", "itemName": "Ultimate Access", "itemType": "FULL_GAME", "economy": "Premium", "priceUsd": 12.99, "paymentMethod": "Apple Pay" },
+      { "purchaseId": "TX023", "playerId": "P2023", "game": "Apex Legends Mobile", "platform": "Android", "country": "IN", "itemName": "Squad Pack", "itemType": "DLC", "economy": "Hard", "priceUsd": 3.75, "paymentMethod": "Google Pay" },
+      { "purchaseId": "TX024", "playerId": "P2024", "game": "FIFA Mobile", "platform": "iOS", "country": "UK", "itemName": "Manager’s Pack", "itemType": "FULL_GAME", "economy": "Premium", "priceUsd": 15.99, "paymentMethod": "Credit Card" },
+      { "purchaseId": "TX025", "playerId": "P2025", "game": "Madden", "platform": "Android", "country": "US", "itemName": "Weekender Bundle", "itemType": "DLC", "economy": "Soft", "priceUsd": 1.99, "paymentMethod": "Google Pay" },
+      { "purchaseId": "TX026", "playerId": "P2026", "game": "Apex Legends Mobile", "platform": "iOS", "country": "IN", "itemName": "Reactive Camo", "itemType": "COSMETIC", "economy": "Premium", "priceUsd": 6.49, "paymentMethod": "Apple Pay" },
+      { "purchaseId": "TX027", "playerId": "P2027", "game": "FIFA Mobile", "platform": "Android", "country": "UK", "itemName": "Extra Time Pass", "itemType": "DLC", "economy": "Hard", "priceUsd": 2.25, "paymentMethod": "Credit Card" },
+      { "purchaseId": "TX028", "playerId": "P2028", "game": "Madden", "platform": "iOS", "country": "US", "itemName": "Theme Pack", "itemType": "COSMETIC", "economy": "Soft", "priceUsd": 3.25, "paymentMethod": "Apple Pay" },
+      { "purchaseId": "TX029", "playerId": "P2029", "game": "Apex Legends Mobile", "platform": "Android", "country": "IN", "itemName": "Character Unlock", "itemType": "FULL_GAME", "economy": "Premium", "priceUsd": 7.99, "paymentMethod": "Google Pay" },
+      { "purchaseId": "TX030", "playerId": "P2030", "game": "FIFA Mobile", "platform": "iOS", "country": "UK", "itemName": "Fan Gear", "itemType": "COSMETIC", "economy": "Hard", "priceUsd": 4.29, "paymentMethod": "Credit Card" }
+    ],
+    "insights": [
+      { "type": "success", "message": "Revenue increased 12% compared to last week." },
+      { "type": "warning", "message": "High refund rate on Rare Emote Set." },
+      { "type": "info", "message": "More players are buying during evening hours." }
+    ]
+  }
+  

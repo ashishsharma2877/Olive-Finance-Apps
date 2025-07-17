@@ -1,5 +1,8 @@
 import React from 'react';
-import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Box } from '@mui/material';
+import {
+  Table, TableBody, TableCell, TableContainer,
+  TableHead, TableRow, Paper
+} from '@mui/material';
 
 interface Column {
   field: string;
@@ -9,9 +12,12 @@ interface Column {
 interface DataTableProps {
   columns: Column[];
   rows: Record<string, any>[];
+  customRenderers?: {
+    [field: string]: (value: any, row: Record<string, any>) => React.ReactNode;
+  };
 }
 
-const DataTable: React.FC<DataTableProps> = ({ columns, rows }) => (
+const DataTable: React.FC<DataTableProps> = ({ columns, rows, customRenderers }) => (
   <TableContainer component={Paper} sx={{ mt: 2, maxHeight: 400 }}>
     <Table size="small" stickyHeader>
       <TableHead>
@@ -25,7 +31,11 @@ const DataTable: React.FC<DataTableProps> = ({ columns, rows }) => (
         {rows.map((row, idx) => (
           <TableRow key={idx}>
             {columns.map(col => (
-              <TableCell key={col.field}>{row[col.field]}</TableCell>
+              <TableCell key={col.field}>
+                {customRenderers?.[col.field]
+                  ? customRenderers[col.field](row[col.field], row)
+                  : row[col.field]}
+              </TableCell>
             ))}
           </TableRow>
         ))}
@@ -34,4 +44,4 @@ const DataTable: React.FC<DataTableProps> = ({ columns, rows }) => (
   </TableContainer>
 );
 
-export default DataTable; 
+export default DataTable;

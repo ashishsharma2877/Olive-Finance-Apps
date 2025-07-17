@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import TabNav from './components/TabNav'
 import PlayerEngagement from './components/PlayerEngagement'
+import PlayerMonetization from './components/PlayerMonetization'
 import BudgetVsActuals from './components/BudgetVsActuals'
 import TopVarianceDrivers from './components/TopVarianceDrivers'
 import ForecastAccuracy from './components/ForecastAccuracy'
@@ -9,6 +10,7 @@ import './App.css'
 
 const TABS = [
   'Player Engagement',
+  'Player Monetization',
   'Budget vs Actuals',
   'Top Variance Drivers',
   'Forecast Accuracy',
@@ -22,6 +24,9 @@ function App() {
   switch (selectedTab) {
     case 'Player Engagement':
       TabContent = <PlayerEngagement />
+      break
+    case 'Player Monetization':
+      TabContent = <PlayerMonetization />
       break
     case 'Budget vs Actuals':
       TabContent = <BudgetVsActuals />
@@ -41,7 +46,7 @@ function App() {
 
   return (
     <div className="App" style={{ maxWidth: 1200, margin: '0 auto', padding: 32 }}>
-      <h1 style={{ marginBottom: 0 }}>FINANCE ANALYTICS</h1>
+      <h1 style={{ marginBottom: 0 }}>OLIVE  ANALYTICS</h1>
       <TabNav tabs={TABS} selectedTab={selectedTab} onTabSelect={setSelectedTab} />
       <div style={{ marginTop: 32 }}>{TabContent}</div>
     </div>

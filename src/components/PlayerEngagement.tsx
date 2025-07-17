@@ -6,11 +6,12 @@ import PlayerChartWrapper from './common/PlayerChartWrapper';
 import DataTable from './common/DataTable';
 import KeyInsights from './common/KeyInsights';
 import data from '../data/playerEngagement.json';
-import { Box, Typography, MenuItem, FormControl, InputLabel, Select } from '@mui/material';
+import { Box, Typography, MenuItem, FormControl, InputLabel, Select, Chip } from '@mui/material';
 import PersonIcon from '@mui/icons-material/Person';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import WarningIcon from '@mui/icons-material/Warning';
-import Grid from '@mui/material/Grid';
+import AppleIcon from '@mui/icons-material/Apple';
+import AndroidIcon from '@mui/icons-material/Android';
 
 const PlayerEngagement: React.FC = () => {
   const [game, setGame] = useState('All');
@@ -87,10 +88,24 @@ const PlayerEngagement: React.FC = () => {
       (game === 'All' || row.game === game) &&
       (platform === 'All' || row.platform === platform) &&
       (country === 'All' || row.country === country) &&
-      (timePeriod === 'All' || row.date.includes('2025-07')) &&
+      (timePeriod === 'All' || row.date?.includes('2025-07')) &&
       (exitReasonFilter === 'All' || row.exitReason === exitReasonFilter)
     );
   }, [data.tableData, game, platform, country, timePeriod, exitReasonFilter]);
+
+  const customRenderers: { [field: string]: (value: any, row: any) => React.ReactNode } = {
+    platform: (value) => value === 'iOS' ? <Chip icon={<AppleIcon />} label="iOS" /> : <Chip icon={<AndroidIcon />} label="Android" color="success" />,
+    exitReason: (value) => {
+      const colors: { [key: string]: 'default' | 'error' | 'warning' | 'info' | 'success' } = {
+        'rage-quit': 'error',
+        'crash': 'warning',
+        'afk': 'info',
+        'natural': 'success'
+      };
+      return <Chip label={value} color={colors[value] || 'default'} variant="outlined" />;
+    },
+    revenueUsd: (value) => `$${value.toFixed(2)}`,
+  };
 
   return (
     <Box maxWidth={1400} mx="auto" px={2}>
@@ -158,7 +173,7 @@ const PlayerEngagement: React.FC = () => {
         </FormControl>
       </Box>
 
-      <DataTable columns={data.tableColumns} rows={filteredTableData} />
+      <DataTable columns={data.tableColumns} rows={filteredTableData} customRenderers={customRenderers} />
     </Box>
   );
 };
